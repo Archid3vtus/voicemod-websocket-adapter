@@ -1,0 +1,5 @@
+node_modules
+dist
+environment.json
+voices.json
+yarn-error.log
