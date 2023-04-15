@@ -81,4 +81,14 @@ export class Voicemod extends WebSocket {
       payload: {},
     });
   }
+
+  setBeepSound(state: number) {
+    this.sendJSON({
+      action: "setBeepSound",
+      id: "",
+      payload: {
+        badLanguage: state,
+      },
+    });
+  }
 }

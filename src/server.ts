@@ -1,8 +1,5 @@
 import express from "express";
-import { readAndSetEnvironmentFile } from "./utils/environment";
 import voicemodController from "./controllers/voicemod";
-
-readAndSetEnvironmentFile(process.env.STAGE);
 
 const server = express();
 const { PORT: port, computerIP } = process.env;
